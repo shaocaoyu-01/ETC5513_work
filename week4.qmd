@@ -18,9 +18,23 @@ See Section @sec-cleaning for details on how the data was prepared.
 
 #| label: fig-bill
 #| fig-cap: "Bill length vs flipper length"
+library(ggplot2)
+library(palmerpenguins)
+
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
   geom_point()
 
 ```
+
+Figure @fig-bill shows the relationship between flipper length and bill length.
+
+```{r}
+
+#| label: tbl-summary
+#| tbl-cap: "Summary statistics of the penguins dataset"
+knitr::kable(summary(penguins))
+
+```
+
 
 Figure @fig-bill shows the relationship between flipper length and bill length.
