@@ -1,0 +1,28 @@
+---
+title: "workshop2"
+format: 
+  html:
+   theme: cerulean
+editor: visual
+author: samuel_shao
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  message = TRUE,
+  warning = FALSE, 
+  echo = FALSE
+)
+library(rmarkdown)
+library(knitr)
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(ggplot2)
+```
+
+Introduction
+
+\#"In this tutorial we are looking at the avian influenza cases detected globally since 1997."
+
+[USCDC](http://www.cdc.gov/bird-flu/php/avian-flu-summary/chart-epi-curve-ah5n1.html)
