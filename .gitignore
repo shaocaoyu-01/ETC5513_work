@@ -2,5 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+<<<<<<< HEAD
 *.html
 *.csv
+=======
+>>>>>>> f2e5bd7 (recover some of the content)

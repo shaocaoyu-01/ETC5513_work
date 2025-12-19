@@ -1,5 +1,6 @@
 ---
 title: "Learning to reference figures, tables and sections"
+
 author: Caoyu 
 date: today
 editor: visual
@@ -38,3 +39,15 @@ knitr::kable(summary(penguins))
 
 
 Figure @fig-bill shows the relationship between flipper length and bill length.
+
+
+## 
+
+```{r}
+library(ggplot2)
+install.packages("palmerpenguins")
+library(palmerpenguins)
+```
+
+Data cleaning
+
