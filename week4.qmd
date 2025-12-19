@@ -10,23 +10,17 @@ execute:
   message: false
 ---
 
-## Quarto
+## Data Cleaning {#sec-cleaning}
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+See Section @sec-cleaning for details on how the data was prepared.
 
 ```{r}
-1 + 1
+
+#| label: fig-bill
+#| fig-cap: "Bill length vs flipper length"
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point()
+
 ```
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+Figure @fig-bill shows the relationship between flipper length and bill length.
